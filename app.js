@@ -3,6 +3,8 @@ const logger = require("morgan");
 
 const app = express();
 
+const Recipe = require('./models/Recipe.model')
+
 // MIDDLEWARE
 app.use(logger("dev"));
 app.use(express.static("public"));
